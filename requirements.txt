@@ -1,0 +1,2 @@
+PySignal>=1.1.1
+PySerial>=3.5
