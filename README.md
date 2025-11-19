@@ -1,6 +1,6 @@
-# MicroPython Upload Tools - Production Ready
+# MicroPython Upload Tools
 
-Improved versions of `REPLace.py` and `SerialConnectionWrapper` with production-quality error handling, logging, and threading.
+Improved versions of `REPLace.py` and `SerialConnectionWrapper` with error handling, logging, and threading.
 
 ## Installation
 
