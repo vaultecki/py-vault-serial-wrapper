@@ -1,2 +1,3 @@
-PySignal>=1.1.1
 PySerial>=3.5
+# Logging is built-in (no external dependency needed)
+# PySignal is now included in the improved SerialConnectionWrapper
