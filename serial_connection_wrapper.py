@@ -4,7 +4,7 @@ import threading
 import serial
 
 
-class EspSerialConnection:
+class SerialConnectionWrapper:
     # class to connect to esp on serial port
     # pysignal recv_data can be used to subscribe to messages from serial connection
 
@@ -68,12 +68,12 @@ class EspSerialConnection:
 
 
 if __name__ == "__main__":
-    esc = EspSerialConnection(port="COM6")
-    esc.recv_data.connect(esc.print_recv)
+    scw = SerialConnectionWrapper(port="COM6")
+    scw.recv_data.connect(scw.print_recv)
     while True:
         inp = input()
-        esc.send(inp)
-    # esc.send("")
+        scw.send(inp)
+    # scw.send("")
     # time.sleep(1)
-    # esc.send("print('Hello World')")
+    # scw.send("print('Hello World')")
     # time.sleep(1)
